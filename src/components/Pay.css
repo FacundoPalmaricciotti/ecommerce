@@ -1,0 +1,71 @@
+.pay-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .payment-section {
+    margin-bottom: 20px;
+  }
+  
+  .payment-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .ticket {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .ticket-item {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .ticket hr {
+    margin: 10px 0;
+  }
+  
+  .payment-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .proceed-payment-btn,
+  .back-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .proceed-payment-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .proceed-payment-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .back-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .back-btn:hover {
+    background-color: #d32f2f;
+  }

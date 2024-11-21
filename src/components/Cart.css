@@ -1,0 +1,152 @@
+.Empty{
+  font-size: 45px;
+  color: #164A41;
+  text-align: center;
+}
+.titulo{
+  font-size: 35px;
+}
+.cart-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.cart-item {
+  height: 120px;
+  width: 520px;
+  color: #164A41;
+  background-color: #F1F1F1;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #9DC88D;
+  border-radius: 8px;
+  box-sizing: border-box;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px #164a4142;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+
+.cart-item-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-item h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #164A41;
+  font-weight: bold;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.cart-item p {
+  color: #164A41;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-btn {
+  background-color: transparent;
+  border: 2px solid #164A41;
+  cursor: pointer;
+  color: #164A41;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.quantity-btn:hover {
+  transform: scale(1.1);
+  background-color: #F1B24A;
+  color: #fff;
+}
+
+.quantity {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.remove-btn {
+  background-color: #F1B24A;
+  color: #164A41;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: #83622d;
+  color: #ccc;
+}
+
+.cart-total {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pay-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pay-button button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color:#F1B24A;
+  color:#2C6B53;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pay-button button:hover {
+  background-color: #2C6B53;
+  color:#f1f1f1;
+}

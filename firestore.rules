@@ -1,0 +1,27 @@
+// Reglas de seguridad para Firestore
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Permitir a los usuarios autenticados leer y escribir en sus propios documentos
+    match /users/{userId} {
+      // Solo permite lectura y escritura si el usuario está autenticado y su ID coincide con el ID del documento
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Permitir solo a los usuarios autenticados leer en la colección 'public'
+    match /public/{document=**} {
+      allow read: if request.auth != null;  // Solo usuarios autenticados pueden leer documentos públicos
+      allow write: if false; // Prohibir la escritura en la colección 'public'
+    }
+
+    // Reglas generales para cualquier otra colección
+    match /{document=**} {
+      // Permitir solo lectura a usuarios autenticados
+      allow read: if request.auth != null;
+      // Permitir escritura solo a usuarios autenticados, puedes restringir más dependiendo de la colección
+      allow write: if request.auth != null;
+    }
+  }
+}
