@@ -52,12 +52,13 @@
   }
   
   .proceed-payment-btn {
-    background-color: #28a745;
-    color: white;
+    background-color: #164A41;
+    color: #F1F1F1;
   }
   
   .proceed-payment-btn:disabled {
-    background-color: #ccc;
+    background-color: #F1B24A;
+    color: #164A41;
     cursor: not-allowed;
   }
   

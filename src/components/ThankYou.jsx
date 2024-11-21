@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./ThankYou.css";
 
-const ThankYou = () => {
+const Thankyou = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const orderId = location.state?.orderId || "N/A";
@@ -43,4 +43,4 @@ const ThankYou = () => {
   );
 };
 
-export default ThankYou
+export default Thankyou
