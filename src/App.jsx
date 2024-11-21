@@ -7,7 +7,7 @@ import Home from './components/Home'
 import Cart from './components/Cart'
 import Product from './components/Product'
 import Pay from './components/Pay'
-import Thankyou from './components/Thankyou'
+import Thankyou from './components/Thanku'
 
 const App = () => {
     return (
